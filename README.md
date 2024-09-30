@@ -17,7 +17,7 @@ O Fast Curriculum é uma plataforma inovadora que auxilia candidatos a emprego n
 ## Funcionalidades
 
 •⁠ ⁠*Autenticação e Autorização de Usuário*: Registro e login seguros com JWT.
-•⁠ ⁠*Gerenciamento de Perfil*: Usuários podem gerenciar suas informações pessoais, experiência profissional, educação e habilidades.
+•⁠ ⁠*Gerenciamento de Perfil*: Usuários podem gerenciar suas informações pessoais, experiência profissional educação e habilidades.
 •⁠ ⁠*Geração de Currículos*: Integração com a OpenAI para gerar currículos personalizados com base nas descrições de vagas.
 •⁠ ⁠*Sistema de Créditos*: Usuários podem comprar créditos via Mercado Pago para gerar currículos.
 •⁠ ⁠*Análise de Currículos*: Analise currículos existentes e forneça sugestões de melhoria.
@@ -57,7 +57,7 @@ O Fast Curriculum é uma plataforma inovadora que auxilia candidatos a emprego n
 1.⁠ ⁠*Clone o repositório:*
 
 ```bash
-git clone https://github.com/seuusuario/fast-curriculum.git
+git clone https://github.com/segabrielcarvalho/fast-curriculum.git
 cd fast-curriculum
 ```
 
