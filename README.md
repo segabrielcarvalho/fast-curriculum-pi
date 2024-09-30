@@ -1,112 +1,125 @@
 # Fast Curriculum API
 
-Fast Curriculum is an innovative platform that assists job seekers in creating personalized resumes tailored to specific job descriptions. By inputting the job description, the system generates a customized resume using the user's information, optimizing their chances in the competitive job market. This repository contains the backend API built with Node.js, NestJS, and GraphQL.
+O Fast Curriculum é uma plataforma inovadora que auxilia candidatos a emprego na criação de currículos personalizados adaptados a descrições de vagas específicas. Ao inserir a descrição da vaga, o sistema gera um currículo personalizado usando as informações do usuário, otimizando suas chances no competitivo mercado de trabalho. Este repositório contém a API backend construída com Node.js, NestJS e GraphQL.
 
-## Table of Contents
+## Índice
+
+•⁠ ⁠[Fast Curriculum API](#fast-curriculum-api)
 
 - [Fast Curriculum API](#fast-curriculum-api)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
+  - [Índice](#índice)
+  - [Funcionalidades](#funcionalidades)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Começando](#começando)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Instalação](#instalação)
 
-## Features
+## Funcionalidades
 
-- **User Authentication and Authorization**: Secure login and registration with JWT.
-- **Profile Management**: Users can manage their personal information, work experience, education, and skills.
-- **Resume Generation**: Integration with OpenAI to generate customized resumes based on job descriptions.
-- **Credit System**: Users can purchase credits via Mercado Pago to generate resumes.
-- **Resume Analysis**: Analyze existing resumes and provide suggestions for improvement.
-- **Notifications**: Real-time notifications and email alerts for important actions.
-- **API Gateway**: Centralized API gateway for routing and security.
+•⁠ ⁠*Autenticação e Autorização de Usuário*: Registro e login seguros com JWT.
+•⁠ ⁠*Gerenciamento de Perfil*: Usuários podem gerenciar suas informações pessoais, experiência profissional, educação e habilidades.
+•⁠ ⁠*Geração de Currículos*: Integração com a OpenAI para gerar currículos personalizados com base nas descrições de vagas.
+•⁠ ⁠*Sistema de Créditos*: Usuários podem comprar créditos via Mercado Pago para gerar currículos.
+•⁠ ⁠*Análise de Currículos*: Analise currículos existentes e forneça sugestões de melhoria.
+•⁠ ⁠*Notificações*: Notificações em tempo real e alertas por e-mail para ações importantes.
+•⁠ ⁠*API Gateway*: Gateway de API centralizado para roteamento e segurança.
 
-## Technologies Used
+## Tecnologias Utilizadas
 
-- **Node.js**: JavaScript runtime environment.
-- **NestJS**: Progressive Node.js framework for building efficient and scalable server-side applications.
-- **GraphQL**: Query language for APIs, providing a more efficient and flexible alternative to REST.
-- **Prisma**: Next-generation ORM for Node.js and TypeScript.
-- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
-- **JWT (jsonwebtoken)**: For authentication and authorization.
-- **Bcrypt**: Library to help hash passwords.
-- **Class Validator and Class Transformer**: For validating and transforming request data.
-- **Dotenv**: Loads environment variables from a `.env` file.
-- **Nodemon**: Utility that monitors for changes in source code and automatically restarts the server.
-- **Jest**: JavaScript testing framework.
-- **Docker**: Containerization platform for consistent development and deployment environments.
-- **Mercado Pago SDK**: Integration for payment processing.
-- **OpenAI API**: Integration for resume generation and analysis.
+•⁠ ⁠*Node.js*: Ambiente de execução JavaScript.
+•⁠ ⁠*NestJS*: Framework progressivo para construir aplicações server-side eficientes e escaláveis com Node.js.
+•⁠ ⁠*GraphQL*: Linguagem de consulta para APIs, fornecendo uma alternativa mais eficiente e flexível ao REST.
+•⁠ ⁠*Prisma*: ORM de última geração para Node.js e TypeScript.
+•⁠ ⁠*TypeScript*: Superconjunto tipado do JavaScript que compila para JavaScript puro.
+•⁠ ⁠*JWT (jsonwebtoken)*: Para autenticação e autorização.
+•⁠ ⁠*Bcrypt*: Biblioteca para auxiliar na hash de senhas.
+•⁠ ⁠*Class Validator e Class Transformer*: Para validação e transformação de dados de requisição.
+•⁠ ⁠*Dotenv*: Carrega variáveis de ambiente de um arquivo ⁠ .env ⁠.
+•⁠ ⁠*Nodemon*: Utilitário que monitora alterações no código-fonte e reinicia automaticamente o servidor.
+•⁠ ⁠*Jest*: Framework de testes para JavaScript.
+•⁠ ⁠*Docker*: Plataforma de conteinerização para ambientes de desenvolvimento e implantação consistentes.
+•⁠ ⁠*SDK do Mercado Pago*: Integração para processamento de pagamentos.
+•⁠ ⁠*API da OpenAI*: Integração para geração e análise de currículos.
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 
-- **Node.js** (version 14 or higher)
-- **npm** (version 6 or higher)
-- **Docker** and **Docker Compose** (for containerization)
-- **PostgreSQL** database
-- **OpenAI API Key**
-- **Mercado Pago Credentials**
+•⁠ ⁠*Node.js* (versão 14 ou superior)
+•⁠ ⁠*npm* (versão 6 ou superior)
+•⁠ ⁠*Docker* e _Docker Compose_ (para conteinerização)
+•⁠ ⁠Banco de dados _PostgreSQL_
+•⁠ ⁠*Chave de API da OpenAI*
+•⁠ ⁠*Credenciais do Mercado Pago*
 
-### Installation
+### Instalação
 
-1.  **Clone the repository:**
+1.⁠ ⁠*Clone o repositório:*
 
-    ```bash
-    git clone https://github.com/yourusername/fast-curriculum.git
-    cd fast-curriculum
-    Install dependencies:
-    ```
+```bash
+git clone https://github.com/seuusuario/fast-curriculum.git
+cd fast-curriculum
+```
 
-    ```bash
+Instale as dependências:
 
-    npm install
+```bash
+npm install
+```
 
-    ```
+Configure as Variáveis de Ambiente:
 
-    Configure Environment Variables:
-
-Create a .env file in the root directory and add the following variables:
+Crie um arquivo .env no diretório raiz e adicione as seguintes variáveis:
 
 env
-Copiar código
-DATABASE_URL=postgresql://user:password@localhost:5432/fastcurriculum
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
-MERCADOPAGO_ACCESS_TOKEN=your_mercadopago_access_token
-Replace the placeholders with your actual configuration values.
+DATABASE_URL=postgresql://usuario:senha@localhost:5432/fastcurriculum
+JWT_SECRET=seu_jwt_secret
+OPENAI_API_KEY=sua_chave_api_openai
+MERCADOPAGO_ACCESS_TOKEN=seu_token_acesso_mercadopago
+Substitua os espaços reservados pelos seus valores de configuração reais.
+
+Execute as Migrações do Banco de Dados:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+Executando a Aplicação
+Modo de Desenvolvimento:
 
 ```bash
 npm run start:dev
 ```
 
-Production Mode:
+Modo de Produção:
 
 ```bash
 npm run build
 npm run start:prod
 ```
 
-Using Docker:
+Usando Docker:
 
-Make sure Docker and Docker Compose are installed.
+Certifique-se de que o Docker e o Docker Compose estão instalados.
 
 ```bash
 docker-compose up -d
 ```
 
-This will set up the application along with the PostgreSQL database.
+Isso configurará a aplicação juntamente com o banco de dados PostgreSQL.
 
-API Documentation
-The Fast Curriculum API uses GraphQL. Once the application is running, you can access the GraphQL Playground at:
+Documentação da API
+A API do Fast Curriculum utiliza GraphQL. Uma vez que a aplicação esteja em execução, você pode acessar o GraphQL Playground em:
 
 ```bash
 http://localhost:3000/graphql
 ```
 
-Here you can explore the available queries, mutations, and subscriptions.
+Aqui você pode explorar as queries, mutations e subscriptions disponíveis.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Licença
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+```
+
+```
