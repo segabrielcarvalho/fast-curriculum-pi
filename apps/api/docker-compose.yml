@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+   database:
+      container_name: fast-curriculum-shorten-database
+      image: 'postgres:alpine'
+      expose:
+         - '5432'
+      ports:
+         - '5432:5432'
+      environment:
+         - POSTGRES_USER=docker
+         - POSTGRES_PASSWORD=docker
+         - POSTGRES_DB=api
+      volumes:
+         - 'postgresql_data:/var/lib/postgresql/data'
+      networks:
+         - fast-curriculum-shorten-network
+networks:
+   fast-curriculum-shorten-network:
+      driver: bridge
+
+volumes:
+   postgresql_data:
